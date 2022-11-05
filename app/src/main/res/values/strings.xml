@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">My First App</string>
+    <string name="started_title">Hello You !</string>
+    <string name="started_subtitle">
+        Nice to meet you , come join our community!
+        <br><b>login</b> if you already have an account.</br>
+        <br><b>Register</b> to get started with the app</br>
+    </string>
+    <string name="illustration_img">Illustration Image</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="login_title">Login To App</string>
+    <string name="login_subtitle">
+        <font color="#00C988"><b>Login</b></font>
+        if you already have an account
+    </string>
+    <string name="login_email"> Your email or username</string>
+    <string name="login_password"> Your password</string>
+    <string name="login_forgot_pw"> Forgot password</string>
+    <string name="login_ht_account">
+        i don\'t have an account
+        <font color="#00c988"><b>register</b></font>
+
+    </string>
+</resources>

@@ -42,6 +42,13 @@
         app:startIconDrawable="@drawable/ic_circle_account"
         tools:ignore="MissingConstraints">
 
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="382dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
         <!--        style="@style/TextInputLayout">-->
 
@@ -56,18 +63,16 @@
 <!--            style="@style/TextInputEditText"-->
 
 
-
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="368dp"
+        android:layout_height="40dp"
         android:layout_marginTop="15dp"
         android:hint="@string/login_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/til_email"
-        app:startIconDrawable="@drawable/ic_circle_account"
+        app:startIconDrawable="@drawable/ic_lock"
         tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputLayout
@@ -76,6 +81,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/editTextNumberPassword"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberPassword" />
     </com.google.android.material.textfield.TextInputLayout>
     <!--            style="@style/TextInputEditText"-->
 

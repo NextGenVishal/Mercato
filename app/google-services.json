@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "45474723837",
+    "project_id": "mercato-ac00a",
+    "storage_bucket": "mercato-ac00a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45474723837:android:4aadeaab1b35cfe3364b94",
+        "android_client_info": {
+          "package_name": "gen.vishal.mercato"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "45474723837-mdlibrg577c784n5spi8mqoc68au9i71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0FNiBKjRlFv4tJM9lv-P_xO1uueYFWyo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "45474723837-mdlibrg577c784n5spi8mqoc68au9i71.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

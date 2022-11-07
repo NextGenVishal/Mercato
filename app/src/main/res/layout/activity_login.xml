@@ -23,7 +23,7 @@
     <TextView
         android:id="@+id/tv_login_sub_title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_context"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/login_subtitle"
         app:layout_constraintEnd_toEndOf="parent"
@@ -112,7 +112,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_login"
-        android:layout_width="match parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="36dp"
         android:text="@string/btn_login"

@@ -23,7 +23,7 @@
     <TextView
         android:id="@+id/tv_login_sub_title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_context"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/login_subtitle"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,8 +32,8 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="325dp"
+        android:layout_height="53dp"
         android:layout_marginTop="50dp"
         android:hint="@string/login_email"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,9 +43,9 @@
         tools:ignore="MissingConstraints">
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
-            android:layout_width="382dp"
-            android:layout_height="match_parent"
+            android:id="@+id/editTextTextEmailAddress3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
             android:inputType="textEmailAddress" />
@@ -63,15 +63,22 @@
 <!--            style="@style/TextInputEditText"-->
 
 
+    <!--            style="@style/TextInputEditText"-->
+
+
+    <!--        style="@style/ButtonGreen"/>-->
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_password"
-        android:layout_width="368dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="15dp"
+        android:layout_width="326dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
         android:hint="@string/login_password"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/til_email"
+        app:passwordToggleEnabled="true"
         app:startIconDrawable="@drawable/ic_lock"
         tools:ignore="MissingConstraints">
 
@@ -83,43 +90,42 @@
             android:inputType="textPassword" />
 
         <EditText
-            android:id="@+id/editTextNumberPassword"
+            android:id="@+id/editTextTextPassword"
             android:layout_width="match_parent"
-            android:layout_height="58dp"
+            android:layout_height="54dp"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="numberPassword" />
-    </com.google.android.material.textfield.TextInputLayout>
-    <!--            style="@style/TextInputEditText"-->
+            android:inputType="textPassword" />
 
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/tv_forgot_pin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
         android:text="@string/login_forgot_pw"
         android:textAlignment="textEnd"
         android:textColor="@color/primary_color"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_login"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/til_password"
-        />
-
-
-    <!--        style="@style/ButtonGreen"/>-->
+        app:layout_constraintTop_toBottomOf="@+id/tv_login_title"
+        app:layout_constraintVertical_bias="0.472" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_login"
-        android:layout_width="match parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
         android:text="@string/btn_login"
         app:backgroundTint="#009688"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login_title"
+        app:layout_constraintVertical_bias="0.953" />
 
     <TextView
         android:id="@+id/tv_ht_account"
@@ -136,4 +142,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

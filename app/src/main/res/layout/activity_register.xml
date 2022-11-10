@@ -9,7 +9,7 @@
     android:background = "#24766E">
 
     <TextView
-        android:id="@+id/tv_register_title"
+        android:id="@+id/tv_login_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -18,19 +18,18 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/till_email"
+        android:id="@+id/til_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="50dp"
         android:hint="@string/login_email"
-        app:layout_constraintBottom_toTopOf="@+id/nextButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_register_title"
-        app:layout_constraintVertical_bias="0.06"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login_title"
         app:startIconDrawable="@drawable/ic_circle_account"
         tools:ignore="MissingConstraints">
 
@@ -39,74 +38,112 @@
             android:layout_width="385dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:autofillHints="enter your email id"
-            android:inputType="textEmailAddress"
-            tools:ignore="LabelFor" />
+            android:ems="10"
+            android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
-
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/till_password"
+        android:id="@+id/til_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="password"
-        app:layout_constraintBottom_toTopOf="@+id/nextButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_email"
+        app:layout_constraintVertical_bias="0.069"
+        app:startIconDrawable="@drawable/ic_lock"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="212dp"
+        android:hint="Phone"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/till_email"
-        app:layout_constraintVertical_bias="0.036"
-        app:startIconDrawable="@drawable/ic_lock"
-        tools:ignore="HardcodedText,MissingConstraints"
-        app:passwordToggleEnabled="true">
+        app:layout_constraintTop_toBottomOf="@+id/tv_login_title"
+        app:layout_constraintVertical_bias="0.055"
+        app:startIconDrawable="@drawable/ic_account"
+        tools:ignore="MissingConstraints">
 
         <EditText
-            android:id="@+id/editTextTextPassword2"
-            android:layout_width="match_parent"
-            android:layout_height="51dp"
+            android:id="@+id/editTextPhone"
+            android:layout_width="382dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:autofillHints=" password"
-            android:inputType="textPassword"
-            tools:ignore="LabelFor" />
+            android:ems="10"
+            android:inputType="phone" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_cnfpassword"
+        android:id="@+id/til_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="confirm password"
-        app:layout_constraintBottom_toTopOf="@+id/nextButton"
+        android:layout_marginTop="212dp"
+        android:hint="Name"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/till_password"
-        app:layout_constraintVertical_bias="0.064"
-        app:startIconDrawable="@drawable/ic_lock"
-        tools:ignore="HardcodedText,MissingConstraints"
-        app:passwordToggleEnabled="true">
+        app:layout_constraintTop_toBottomOf="@+id/tv_login_title"
+        app:layout_constraintVertical_bias="0.273"
+        app:startIconDrawable="@drawable/ic_account"
+        tools:ignore="MissingConstraints">
 
         <EditText
-            android:id="@+id/editTextTextPassword1"
-            android:layout_width="match_parent"
-            android:layout_height="51dp"
+            android:id="@+id/editTextTextPostalAddress"
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:autofillHints=" confirm password"
-            android:inputType="textPassword"
-            tools:ignore="LabelFor,MissingConstraints" />
+            android:ems="10"
+            android:inputType="textPostalAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/registerButton"
+        android:id="@id/nextButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
         android:text="@string/btn_register"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/til_cnfpassword"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="677dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:hint="@string/login_email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login_title"
+        app:layout_constraintVertical_bias="0.181"
+        app:startIconDrawable="@drawable/ic_circle_account"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/editTextTextPostalAddress2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPostalAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

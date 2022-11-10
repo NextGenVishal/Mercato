@@ -131,7 +131,7 @@
         android:id="@+id/tv_ht_account"
         android:layout_width="350dp"
         android:layout_height="20dp"
-        android:layout_marginBottom="8dp "
+        android:layout_marginBottom="8dp"
         android:text="@string/login_ht_account"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
